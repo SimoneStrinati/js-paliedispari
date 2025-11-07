@@ -26,7 +26,21 @@ let puntataComputer = numeroRandom(0, 5);
  */
 
 function pariOdispari(numero) {
-     return numero % 2 != 0;
+     if ( numero % 2 != 0 ) {
+        return "dispari";
+     }
+     return "pari";     
 }
 
-pariOdispari(puntataGiocatore + puntataComputer);
+let risultato = pariOdispari(puntataGiocatore + puntataComputer);
+ 
+console.log(risultato);
+/**
+ * Dochiarazione vincitore
+ */
+
+if ( puntata == risultato) {
+    console.log("Complimenti! Hai vinto!");
+} else {
+        console.log("Oh no...hai perso!");
+    }
